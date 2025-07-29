@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fe33c750fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <img src="images/logo1-removebg-preview.png" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi, I'm <span>Lungani</span> <br>Gcabashe From South Africa</h1>
+                <p>Front-End Developer</p>
+                <p>I create user-friendly, responsive websites designed to bring ideas to life.
+                <br>Explore my work or feel free to reach out!</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-----------------------------About------------------------->
+
+    <div id="about">
+        <div class="container">
+
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpeg" >
+                </div>
+
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    I’m an aspiring software developer with a strong interest in technology, design, and problem-solving. I enjoy turning ideas into real, working solutions and constantly look for ways to improve my skills. Whether I’m coding a website or learning a new tool, I’m committed to growing and staying curious in everything I do. I'm driven by progress and the opportunity to build things that make a difference.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Eductaion</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, Java, JavaScript, SQL</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript, Responsive Web Design</li>
+                            <li><span>Computer Science Fundamentals</span><br>Data Structures & Algorithms, Computer Networking</li>
+                            <li><span>Soft Skills</span><br>Problem-Solving, Time Management, Adaptability, Collaboration, Attention to Detail, Planning & Organising, Interpersonal Skills</li>
+                            <li><span>Computer Science Fundamentals</span><br>Data Structures & Algorithms, Computer Networking</li>
+                            <li><span>Additional Skills</span><br> Mathematical Reasoning, General Computer Literacy, Research Skills</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1st July - 31st July, 2025</span><br>Internship Program - Prodigy InfoTech</li>
+                            <li><span>Web Development</span><br>Developed Weather App, Portfolio Website, Responsive Menu, Tic Tac Toe Game and Stopwatch App</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Feb 2025 - Dec 2025</span><br>BSc Honours in Computer Science, University of Zululand</li>
+                            <li><span>Feb 2021 - Nov 2024</span><br>BSc in Computer Science and Physics, University of Zululand</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-----------------------------Services------------------------->
+
+    <div id="services">
+        <div class="container">
+
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quam nostrum, beatae expedita, eveniet porro eos cum</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quam nostrum, beatae expedita, eveniet porro eos cum</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quam nostrum, beatae expedita, eveniet porro eos cum</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-----------------------------Portfolio------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <a href="#" class="btn">See more</a> -->
+
+        </div>
+    </div>
+
+    <!-----------------------------Contact------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>lunganil@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0793312671</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/lungani.lurh.509"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/LunganiGcabashe"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gcabashel/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="CV/Lungani CV.pdf" download="" class="btn btn2" >Download Cv</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @ Lungani. <i class="fa-solid fa-heart"></i>Responsice Portfolio</p>
+        </div>
+    </div>
+
+
+
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
