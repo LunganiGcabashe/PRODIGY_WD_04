@@ -87,7 +87,7 @@ nav ul li a:hover::after{
 /* ---------------About-------------- */
 
 #about{
-    padding: 80px 0;
+    padding: 40px 0;
     color: #ababab;
 }
 
@@ -226,6 +226,7 @@ nav ul li a:hover::after{
 
 .contact-right{
     flex-basis: 60%;
+    margin-top: -20px;
 }
 
 .contact-left p{
@@ -272,6 +273,7 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+    resize: none;
 }
 
 .btn{
@@ -301,7 +303,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #4a4a4a;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -317,6 +319,10 @@ nav .fa-solid{
 
 /* -----------css for small screen ---------- */
 @media only screen and (max-width: 869px){
+    .container{
+    padding: 20px;
+    position: relative;
+    }
     #header{
         background-image: url(images/backgroundimg-removebg-preview.png);
         background-size: 400px auto;
@@ -326,9 +332,16 @@ nav .fa-solid{
         margin-top: 50%;
         font-size: 16px;
     }
+    nav{
+        width: 100%;
+        justify-content: space-between;
+    }
     nav .fa-solid{
         display: block;
         font-size: 25px;
+    }
+    nav .logo{
+        width: 150px;
     }
     nav ul{
         background: #41393c;
@@ -353,7 +366,7 @@ nav .fa-solid{
     }
     .about-col-2 .sub-title{
         font-size: 30px;
-        margin: 20px 0;
+        margin: 20px 0 5px 0;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
@@ -367,6 +380,9 @@ nav .fa-solid{
     .tab-links{
         font-size: 16px;
         margin-right: 20px;
+    }
+    .sub-title.pro{
+        margin: -40px 0 20px 0px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
