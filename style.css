@@ -33,7 +33,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 85%;
+    width: 100%;
     z-index: 3;
 }
 
